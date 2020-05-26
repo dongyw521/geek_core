@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using WebApplication1.Services;
 
 namespace WebApplication1
 {
@@ -45,11 +46,26 @@ namespace WebApplication1
             //services.AddSingleton<typeof(IGeneric<>),typeof(Generic<>));
 
             //获取注册的服务实例方式：1.controller构造函数；2.方法中的参数标记[FromService]
+
+            //services.AddSingleton<IOrderService, DisposableOrderService>();//全局单例，ctrl+c结束webapplication时，才会调用dispose方法释放，实例是注册到了根容器
+            services.AddTransient<IOrderService, DisposableOrderService>();//瞬时模式，每次刷页面，处理完请求后都会释放该实例
+            //scope模式，在每个scope里是一个单例，scope之间是不同的实例
+            //services.AddScoped<IOrderService>(sp =>
+            //{
+            //    return new DisposableOrderService();
+            //});
+
+            //用户自己创建实例
+            //var service = new DisposableOrderService();
+            //services.AddSingleton<IOrderService>(service);//注册用户自己创建的实例,结束webapplication时,容器没有释放该实例，只能等待GC回收
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //从根容器获取瞬时服务，只有退出应用程序时才会被释放掉，会出现瞬时服务的堆积，违背了瞬时服务的初衷
+            var s = app.ApplicationServices.GetService<IOrderService>();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
