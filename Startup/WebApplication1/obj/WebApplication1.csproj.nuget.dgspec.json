@@ -1,32 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\study\\netcore\\ImeikLearningCore\\Startup\\WebApplication1\\WebApplication1.csproj": {}
+    "/Users/dyw/geek/geek_core/Startup/WebApplication1/WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\study\\netcore\\ImeikLearningCore\\Startup\\WebApplication1\\WebApplication1.csproj": {
+    "/Users/dyw/geek/geek_core/Startup/WebApplication1/WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\study\\netcore\\ImeikLearningCore\\Startup\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "/Users/dyw/geek/geek_core/Startup/WebApplication1/WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\study\\netcore\\ImeikLearningCore\\Startup\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\dongyanwei\\.nuget\\packages\\",
-        "outputPath": "D:\\study\\netcore\\ImeikLearningCore\\Startup\\WebApplication1\\obj\\",
+        "projectPath": "/Users/dyw/geek/geek_core/Startup/WebApplication1/WebApplication1.csproj",
+        "packagesPath": "/Users/dyw/.nuget/packages/",
+        "outputPath": "/Users/dyw/geek/geek_core/Startup/WebApplication1/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dongyanwei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/dyw/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +39,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.9.10, )"
@@ -66,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
         }
       }
     }
