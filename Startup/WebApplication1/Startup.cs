@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -28,42 +28,42 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddSingleton<>//·ºĞÍ×¢²á·½Ê½
+            //services.AddSingleton<>//æ³›å‹æ³¨å†Œæ–¹å¼
 
             //services.AddSingleton<I>(serviceProvider=>{
-            //serviceProvider.GetService().....//¹¤³§Ä£Ê½£º×¢²áÀàÖ®¼äÓĞÏà»¥ÒÀÀµ¹ØÏµ
+            //serviceProvider.GetService().....//å·¥å‚æ¨¡å¼ï¼šæ³¨å†Œç±»ä¹‹é—´æœ‰ç›¸äº’ä¾èµ–å…³ç³»
             //})
 
-            //³¢ÊÔ×¢²á
-            //services.TryAddSingleton<>//Èç¹ûÔ­À´×¢²á¹ı£¬Ôò×¢²áÊ§°Ü£¬²»¹ÜÕâ´ÎµÄÊµÏÖÊÇ·ñºÍÔ­À´ÏàÍ¬
-            //services.TryAddEnumerable<>//Èç¹ûÔ­À´×¢²á¹ı£¬ÇÒÕâ´ÎÊÇ²»Í¬µÄÊµÏÖ£¬Ôò¿ÉÒÔ×¢²á³É¹¦¡£
+            //å°è¯•æ³¨å†Œ
+            //services.TryAddSingleton<>//å¦‚æœåŸæ¥æ³¨å†Œè¿‡ï¼Œåˆ™æ³¨å†Œå¤±è´¥ï¼Œä¸ç®¡è¿™æ¬¡çš„å®ç°æ˜¯å¦å’ŒåŸæ¥ç›¸åŒ
+            //services.TryAddEnumerable<>//å¦‚æœåŸæ¥æ³¨å†Œè¿‡ï¼Œä¸”è¿™æ¬¡æ˜¯ä¸åŒçš„å®ç°ï¼Œåˆ™å¯ä»¥æ³¨å†ŒæˆåŠŸã€‚
 
-            //ÊÍ·Å¼°Ìæ»»
+            //é‡Šæ”¾åŠæ›¿æ¢
             //services.RemoveAll<>
             //services.Replace
 
-            //×¢²á·ºĞÍÄ£°å£¬ÊÊÓÃÓÚ²Ö´¢Ä£Ê½
+            //æ³¨å†Œæ³›å‹æ¨¡æ¿ï¼Œé€‚ç”¨äºä»“å‚¨æ¨¡å¼
             //services.AddSingleton<typeof(IGeneric<>),typeof(Generic<>));
 
-            //»ñÈ¡×¢²áµÄ·şÎñÊµÀı·½Ê½£º1.controller¹¹Ôìº¯Êı£»2.·½·¨ÖĞµÄ²ÎÊı±ê¼Ç[FromService]
+            //è·å–æ³¨å†Œçš„æœåŠ¡å®ä¾‹æ–¹å¼ï¼š1.controlleræ„é€ å‡½æ•°ï¼›2.æ–¹æ³•ä¸­çš„å‚æ•°æ ‡è®°[FromService]
 
-            //services.AddSingleton<IOrderService, DisposableOrderService>();//È«¾Öµ¥Àı£¬ctrl+c½áÊøwebapplicationÊ±£¬²Å»áµ÷ÓÃdispose·½·¨ÊÍ·Å£¬ÊµÀıÊÇ×¢²áµ½ÁË¸ùÈİÆ÷
-            services.AddTransient<IOrderService, DisposableOrderService>();//Ë²Ê±Ä£Ê½£¬Ã¿´ÎË¢Ò³Ãæ£¬´¦ÀíÍêÇëÇóºó¶¼»áÊÍ·Å¸ÃÊµÀı
-            //scopeÄ£Ê½£¬ÔÚÃ¿¸öscopeÀïÊÇÒ»¸öµ¥Àı£¬scopeÖ®¼äÊÇ²»Í¬µÄÊµÀı
+            //services.AddSingleton<IOrderService, DisposableOrderService>();//å…¨å±€å•ä¾‹ï¼Œctrl+cç»“æŸwebapplicationæ—¶ï¼Œæ‰ä¼šè°ƒç”¨disposeæ–¹æ³•é‡Šæ”¾ï¼Œå®ä¾‹æ˜¯æ³¨å†Œåˆ°äº†æ ¹å®¹å™¨
+            services.AddTransient<IOrderService, DisposableOrderService>();//ç¬æ—¶æ¨¡å¼ï¼Œæ¯æ¬¡åˆ·é¡µé¢ï¼Œå¤„ç†å®Œè¯·æ±‚åéƒ½ä¼šé‡Šæ”¾è¯¥å®ä¾‹
+            //scopeæ¨¡å¼ï¼Œåœ¨æ¯ä¸ªscopeé‡Œæ˜¯ä¸€ä¸ªå•ä¾‹ï¼Œscopeä¹‹é—´æ˜¯ä¸åŒçš„å®ä¾‹
             //services.AddScoped<IOrderService>(sp =>
             //{
             //    return new DisposableOrderService();
             //});
 
-            //ÓÃ»§×Ô¼º´´½¨ÊµÀı
+            //ç”¨æˆ·è‡ªå·±åˆ›å»ºå®ä¾‹
             //var service = new DisposableOrderService();
-            //services.AddSingleton<IOrderService>(service);//×¢²áÓÃ»§×Ô¼º´´½¨µÄÊµÀı,½áÊøwebapplicationÊ±,ÈİÆ÷Ã»ÓĞÊÍ·Å¸ÃÊµÀı£¬Ö»ÄÜµÈ´ıGC»ØÊÕ
+            //services.AddSingleton<IOrderService>(service);//æ³¨å†Œç”¨æˆ·è‡ªå·±åˆ›å»ºçš„å®ä¾‹,ç»“æŸwebapplicationæ—¶,å®¹å™¨æ²¡æœ‰é‡Šæ”¾è¯¥å®ä¾‹ï¼Œåªèƒ½ç­‰å¾…GCå›æ”¶
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //´Ó¸ùÈİÆ÷»ñÈ¡Ë²Ê±·şÎñ£¬Ö»ÓĞÍË³öÓ¦ÓÃ³ÌĞòÊ±²Å»á±»ÊÍ·Åµô£¬»á³öÏÖË²Ê±·şÎñµÄ¶Ñ»ı£¬Î¥±³ÁËË²Ê±·şÎñµÄ³õÖÔ
+            //ä»æ ¹å®¹å™¨è·å–ç¬æ—¶æœåŠ¡ï¼Œåªæœ‰é€€å‡ºåº”ç”¨ç¨‹åºæ—¶æ‰ä¼šè¢«é‡Šæ”¾æ‰ï¼Œä¼šå‡ºç°ç¬æ—¶æœåŠ¡çš„å †ç§¯ï¼Œè¿èƒŒäº†ç¬æ—¶æœåŠ¡çš„åˆè¡·
             var s = app.ApplicationServices.GetService<IOrderService>();
 
             if (env.IsDevelopment())
