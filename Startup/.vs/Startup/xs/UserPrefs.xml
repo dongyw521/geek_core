@@ -1,19 +1,22 @@
 ﻿<Properties StartupConfiguration="{851F06AF-510A-4763-8D7C-62F7B9240A50}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConfigurationDemo/Program.cs">
     <Files>
-      <File FileName="WebApplication1/Startup.cs" Line="120" Column="90" />
+      <File FileName="WebApplication1/Startup.cs" Line="110" Column="36" />
       <File FileName="WebApplication1/Program.cs" Line="26" Column="20" />
-      <File FileName="WebApplication1/Services/IMyService.cs" Line="26" Column="1" />
+      <File FileName="WebApplication1/Services/IMyService.cs" Line="20" Column="1" />
       <File FileName="WebApplication1/Services/MyInterceptor.cs" Line="17" Column="62" />
+      <File FileName="WebApplication1/Controllers/WeatherForecastController.cs" Line="56" Column="33" />
+      <File FileName="WebApplication1/Services/IOrderService.cs" Line="16" Column="30" />
+      <File FileName="ConfigurationDemo/Program.cs" Line="50" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Startup" expanded="True" selected="True">
-            <Node name="WebApplication1" expanded="True">
+          <Node name="Startup" expanded="True">
+            <Node name="ConfigurationDemo" expanded="True" selected="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Services" expanded="True" />
             </Node>
+            <Node name="WebApplication1" expanded="True" />
           </Node>
         </State>
       </Pad>

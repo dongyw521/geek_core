@@ -52,13 +52,13 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public int Get([FromServices] IOrderService orderService, [FromServices] IOrderService orderService2, [FromServices]IHostApplicationLifetime appLifetime, bool stop = false)//单例和scope两个orderService为一个实例；瞬时模式时，是两个不同的实例
         {
-            //Console.WriteLine("========1=======");
-            //using (IServiceScope scope = HttpContext.RequestServices.CreateScope())//创建一个scope就会给你一个新的实例
-            //{
-            //    var service = scope.ServiceProvider.GetService<IOrderService>();//与根容器是两个不同的实例
-            //    var service2 = scope.ServiceProvider.GetService<IOrderService>();//service和service2是同一个实例
-            //}
-            //Console.WriteLine("========2=======");
+            Console.WriteLine("========1=======");
+            using (IServiceScope scope = HttpContext.RequestServices.CreateScope())//创建一个scope就会给你一个新的实例
+            {
+               var service = scope.ServiceProvider.GetService<IOrderService>();//与根容器是两个不同的实例
+               var service2 = scope.ServiceProvider.GetService<IOrderService>();//service和service2是同一个实例
+            }
+            Console.WriteLine("========2=======");
             
             if (stop)
             {

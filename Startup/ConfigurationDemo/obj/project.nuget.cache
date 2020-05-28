@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "25zRPP0b/VxdqUyU7LiZjH/FUkwsd7f8K+NWqMphfdoY/8hCbiuQtqv4alRWxnEqS80PbiefzzcY3C7Bc0Y3tg==",
+  "success": true,
+  "projectFilePath": "/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/ConfigurationDemo.csproj",
+  "expectedPackageFiles": [
+    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration/3.1.4/microsoft.extensions.configuration.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.4/microsoft.extensions.configuration.abstractions.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.commandline/3.1.4/microsoft.extensions.configuration.commandline.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.environmentvariables/3.1.4/microsoft.extensions.configuration.environmentvariables.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.primitives/3.1.4/microsoft.extensions.primitives.3.1.4.nupkg.sha512"
+  ],
+  "logs": []
+}
