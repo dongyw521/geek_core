@@ -16,3 +16,12 @@
 /Users/dyw/geek/geek_core/Startup/ConfigurationDemo/obj/Debug/netcoreapp3.1/ConfigurationDemo.genruntimeconfig.cache
 /Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.CommandLine.dll
 /Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/appsettings-env.json
+/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/appsettings.ini
+/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll
+/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Ini.dll
+/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll
+/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll
+/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileSystemGlobbing.dll

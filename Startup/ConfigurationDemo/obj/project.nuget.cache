@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "25zRPP0b/VxdqUyU7LiZjH/FUkwsd7f8K+NWqMphfdoY/8hCbiuQtqv4alRWxnEqS80PbiefzzcY3C7Bc0Y3tg==",
+  "dgSpecHash": "Y9cu+gtOYvpChOjgI/2ilgCuforf0Z7TLFAe5jrV4o7m3tHSegVCkD136RyxlvDldkFm0lDm221u5/rpU/6ahw==",
   "success": true,
   "projectFilePath": "/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/ConfigurationDemo.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,12 @@
     "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.4/microsoft.extensions.configuration.abstractions.3.1.4.nupkg.sha512",
     "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.commandline/3.1.4/microsoft.extensions.configuration.commandline.3.1.4.nupkg.sha512",
     "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.environmentvariables/3.1.4/microsoft.extensions.configuration.environmentvariables.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.fileextensions/3.1.4/microsoft.extensions.configuration.fileextensions.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.ini/3.1.4/microsoft.extensions.configuration.ini.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.json/3.1.4/microsoft.extensions.configuration.json.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.4/microsoft.extensions.fileproviders.abstractions.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.fileproviders.physical/3.1.4/microsoft.extensions.fileproviders.physical.3.1.4.nupkg.sha512",
+    "/Users/dyw/.nuget/packages/microsoft.extensions.filesystemglobbing/3.1.4/microsoft.extensions.filesystemglobbing.3.1.4.nupkg.sha512",
     "/Users/dyw/.nuget/packages/microsoft.extensions.primitives/3.1.4/microsoft.extensions.primitives.3.1.4.nupkg.sha512"
   ],
   "logs": []

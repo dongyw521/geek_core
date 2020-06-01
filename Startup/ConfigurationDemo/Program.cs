@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Primitives;
 
 namespace ConfigurationDemo
 {
@@ -55,11 +56,45 @@ namespace ConfigurationDemo
             //Console.WriteLine($"Section1KEY3={configurationRoot["Section1:KEY3"]}");//获取值是层键还是使用冒号
             //Console.WriteLine($"KEY4={configurationRoot["Dyw_KEY4"]}");
 
-            builder.AddEnvironmentVariables("Dyw_");//只注入指定前缀的环境变量,注入时，会去掉前缀
-            IConfigurationRoot configurationRoot1 = builder.Build();
+            //builder.AddEnvironmentVariables("Dyw_");//只注入指定前缀的环境变量,注入时，会去掉前缀
+            //IConfigurationRoot configurationRoot1 = builder.Build();
 
-            Console.WriteLine($"KEY1={configurationRoot1["KEY1"]}");//key1不存在
-            Console.WriteLine($"KEY4={configurationRoot1["KEY4"]}");
+            //Console.WriteLine($"KEY1={configurationRoot1["KEY1"]}");//key1不存在
+            //Console.WriteLine($"KEY4={configurationRoot1["KEY4"]}");
+
+
+            //4.文件配置提供程序,顺序加载配置文件，后面相同的key会覆盖前面的值
+            //builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+            //builder.AddIniFile("appsettings.ini", optional: false, reloadOnChange: true);
+
+            //IConfigurationRoot configurationRoot = builder.Build();
+            //Console.WriteLine($"Key1={configurationRoot["Key1"]}");
+            //Console.WriteLine($"Key2={configurationRoot["Key2"]}");
+            //Console.WriteLine($"Key3={configurationRoot["Key3"]}");
+
+
+            //5.文件热跟新能力的核心
+            builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+            IConfigurationRoot configurationRoot1 = builder.Build();
+            IChangeToken token = configurationRoot1.GetReloadToken();
+
+            //监控变化的回调，只能监视第一次文件的变化
+            //token.RegisterChangeCallback(state)
+            //token.RegisterChangeCallback((state) =>
+            //{
+            //    Console.WriteLine($"Key1={configurationRoot1["Key1"]}");
+            //    Console.WriteLine($"Key2={configurationRoot1["Key2"]}");
+            //    Console.WriteLine($"Key3={configurationRoot1["Key3"]}");
+            //}, configurationRoot1);
+
+            //始终监视文件变化
+            ChangeToken.OnChange(() => configurationRoot1.GetReloadToken(), () => {
+                Console.WriteLine($"Key1={configurationRoot1["Key1"]}");
+                Console.WriteLine($"Key2={configurationRoot1["Key2"]}");
+                Console.WriteLine($"Key3={configurationRoot1["Key3"]}");
+            });
+            Console.WriteLine("开始了");
+            Console.ReadKey();//需要readkey保持程序一直在运行，这样才能监控到文件变化
 
         }
     }
