@@ -73,10 +73,10 @@ namespace ConfigurationDemo
             //Console.WriteLine($"Key3={configurationRoot["Key3"]}");
 
 
-            //5.文件热跟新能力的核心
-            builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-            IConfigurationRoot configurationRoot1 = builder.Build();
-            IChangeToken token = configurationRoot1.GetReloadToken();
+            //5.文件热更新能力的核心
+            //builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+            //IConfigurationRoot configurationRoot1 = builder.Build();
+            //IChangeToken token = configurationRoot1.GetReloadToken();
 
             //监控变化的回调，只能监视第一次文件的变化
             //token.RegisterChangeCallback(state)
@@ -88,14 +88,37 @@ namespace ConfigurationDemo
             //}, configurationRoot1);
 
             //始终监视文件变化
-            ChangeToken.OnChange(() => configurationRoot1.GetReloadToken(), () => {
-                Console.WriteLine($"Key1={configurationRoot1["Key1"]}");
-                Console.WriteLine($"Key2={configurationRoot1["Key2"]}");
-                Console.WriteLine($"Key3={configurationRoot1["Key3"]}");
+            //ChangeToken.OnChange(() => configurationRoot1.GetReloadToken(), () => {
+            //    Console.WriteLine($"Key1={configurationRoot1["Key1"]}");
+            //    Console.WriteLine($"Key2={configurationRoot1["Key2"]}");
+            //    Console.WriteLine($"Key3={configurationRoot1["Key3"]}");
+            //});
+            //Console.WriteLine("开始了");
+            //Console.ReadKey();//需要readkey保持程序一直在运行，这样才能监控到文件变化
+
+            //6.使用强类型承载配置数据
+            builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+            IConfigurationRoot configurationRoot1 = builder.Build();
+            var cfg = new Config() { key5 = "v5", key6 = true };
+
+            configurationRoot1.GetSection("SectionDemo").Bind(cfg, (BinderOptions obj) =>
+            {
+                obj.BindNonPublicProperties = true;//绑定非公共字段
             });
-            Console.WriteLine("开始了");
-            Console.ReadKey();//需要readkey保持程序一直在运行，这样才能监控到文件变化
+
+            Console.WriteLine($"cfg.key5:{cfg.key5 }");
+            Console.WriteLine($"cfg.key6:{cfg.key6 }");
+            Console.WriteLine($"cfg.key7:{cfg.key7 }");
 
         }
+    }
+
+    public class Config
+    {
+        public string key5 { get; set; }
+
+        public bool key6 { get; set; }
+
+        public int key7 { get; private set; } = 100;
     }
 }

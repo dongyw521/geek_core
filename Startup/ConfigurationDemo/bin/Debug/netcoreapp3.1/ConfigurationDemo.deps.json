@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "3.1.4",
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.4",
+          "Microsoft.Extensions.Configuration.Binder": "3.1.4",
           "Microsoft.Extensions.Configuration.CommandLine": "3.1.4",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "3.1.4",
           "Microsoft.Extensions.Configuration.Ini": "3.1.4",
@@ -36,6 +37,17 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "3.1.4.0",
+            "fileVersion": "3.100.420.21409"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/3.1.4": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll": {
             "assemblyVersion": "3.1.4.0",
             "fileVersion": "3.100.420.21409"
           }
@@ -159,6 +171,13 @@
       "sha512": "sha512-k7IJME4US5S5JFOGYaei5TLwutp8IqUvcBWtliKXETGn/JScmCgfej21xq5+ttxi0qZhiyJY06y9dw+cLh3kiQ==",
       "path": "microsoft.extensions.configuration.abstractions/3.1.4",
       "hashPath": "microsoft.extensions.configuration.abstractions.3.1.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/3.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rN0FlUcOmHpGX1BFGZbtTgsXWwHO9pRTocynckXpqCvcMzqehS36aN+lfIlG3PriFulHF2kzwNVfhBakc072iw==",
+      "path": "microsoft.extensions.configuration.binder/3.1.4",
+      "hashPath": "microsoft.extensions.configuration.binder.3.1.4.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.CommandLine/3.1.4": {
       "type": "package",

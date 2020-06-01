@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[3.1.4, )"
             },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
             "Microsoft.Extensions.Configuration.CommandLine": {
               "target": "Package",
               "version": "[3.1.4, )"
