@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Middleware\" />
+    <Folder Include="ExceptionHandler\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Error\" />
+    <Folder Include="Filter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Error.cs" />
+  </ItemGroup>
+</Project>

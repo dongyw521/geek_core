@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Primitives;
+using ConfigurationDemo.CustomConfigurationSource;
 
 namespace ConfigurationDemo
 {
@@ -97,18 +98,35 @@ namespace ConfigurationDemo
             //Console.ReadKey();//需要readkey保持程序一直在运行，这样才能监控到文件变化
 
             //6.使用强类型承载配置数据
-            builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-            IConfigurationRoot configurationRoot1 = builder.Build();
-            var cfg = new Config() { key5 = "v5", key6 = true };
+            //builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+            //IConfigurationRoot configurationRoot1 = builder.Build();
+            //var cfg = new Config() { key5 = "v5", key6 = true };
 
-            configurationRoot1.GetSection("SectionDemo").Bind(cfg, (BinderOptions obj) =>
-            {
-                obj.BindNonPublicProperties = true;//绑定非公共字段
+            //configurationRoot1.GetSection("SectionDemo").Bind(cfg, (BinderOptions obj) =>
+            //{
+            //    obj.BindNonPublicProperties = true;//绑定非公共字段
+            //});
+
+            //Console.WriteLine($"cfg.key5:{cfg.key5 }");
+            //Console.WriteLine($"cfg.key6:{cfg.key6 }");
+            //Console.WriteLine($"cfg.key7:{cfg.key7 }");
+
+            //7.自定义配置数据源
+            //builder.Add(new MyConfigurationSource());
+            //7.1通过扩展方法引入自定义配置源,这样不暴露自定义的MyConfigurationSource
+            //configbuilder调用configsource,configsource里面又会调用configprovider
+            builder.AddMyConfigurationSource();
+            var configRoot = builder.Build();
+            //Console.WriteLine($"key1={configRoot["key1"]}");
+            //实时监控配置变化（虽然configurationProvider定义了3秒钟重新加载一次配置，但是拿配置的地方也需要实时监控才可以拿到最新配置）
+            ChangeToken.OnChange(() => configRoot.GetReloadToken(), () => {
+                Console.WriteLine($"key1={configRoot["key1"]}");
             });
 
-            Console.WriteLine($"cfg.key5:{cfg.key5 }");
-            Console.WriteLine($"cfg.key6:{cfg.key6 }");
-            Console.WriteLine($"cfg.key7:{cfg.key7 }");
+            
+
+
+            Console.ReadKey();
 
         }
     }

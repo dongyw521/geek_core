@@ -52,15 +52,16 @@ namespace WebApplication1
 
             //services.AddSingleton<IOrderService, DisposableOrderService>();//全局单例，ctrl+c结束webapplication时，才会调用dispose方法释放，实例是注册到了根容器
             services.AddTransient<IOrderService, DisposableOrderService>();//瞬时模式，每次刷页面，处理完请求后都会释放该实例
-            //scope模式，在每个scope里是一个单例，scope之间是不同的实例
-            //services.AddScoped<IOrderService>(sp =>
-            //{
-            //    return new DisposableOrderService();
-            //});
-            
+                                                                           //scope模式，在每个scope里是一个单例，scope之间是不同的实例
+                                                                           //services.AddScoped<IOrderService>(sp =>
+                                                                           //{
+                                                                           //    return new DisposableOrderService();
+                                                                           //});
+
             //用户自己创建实例
             //var service = new DisposableOrderService();
             //services.AddSingleton<IOrderService>(service);//注册用户自己创建的实例,结束webapplication时,容器没有释放该实例，只能等待GC回收
+            services.AddLogging();
         }
 
         /// <summary>
