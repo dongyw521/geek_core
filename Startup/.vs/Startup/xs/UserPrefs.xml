@@ -1,0 +1,21 @@
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{851F06AF-510A-4763-8D7C-62F7B9240A50}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MIddleWareDemo/Startup.cs">
+    <Files>
+      <File FileName="MIddleWareDemo/Startup.cs" Line="40" Column="112" />
+      <File FileName="MIddleWareDemo/Controllers/ErrorController.cs" />
+      <File FileName="MIddleWareDemo/Controllers/WeatherForecastController.cs" />
+      <File FileName="MIddleWareDemo/ExceptionHandler/IKnownException.cs" />
+      <File FileName="MIddleWareDemo/ExceptionHandler/KnownException.cs" />
+      <File FileName="MIddleWareDemo/Filter/MyExceptionFilter.cs" />
+      <File FileName="MIddleWareDemo/Filter/MyExceptionFilterAttribute.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebApplication1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.ConfigurationDemo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
