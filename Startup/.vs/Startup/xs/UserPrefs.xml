@@ -9,6 +9,15 @@
       <File FileName="MIddleWareDemo/Filter/MyExceptionFilter.cs" />
       <File FileName="MIddleWareDemo/Filter/MyExceptionFilterAttribute.cs" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Startup" expanded="True">
+            <Node name="ConfigurationDemo" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WebApplication1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.ConfigurationDemo PreferredExecutionTarget="MonoDevelop.Default" />
