@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{851F06AF-510A-4763-8D7C-62F7B9240A50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{851F06AF-510A-4763-8D7C-62F7B9240A50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationDemo", "ConfigurationDemo\ConfigurationDemo.csproj", "{C9F96B78-EA22-4BAA-B971-62AB8E9931FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationDemo", "ConfigurationDemo\ConfigurationDemo.csproj", "{C9F96B78-EA22-4BAA-B971-62AB8E9931FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceOptionsConfig", "ServiceOptionsConfig\ServiceOptionsConfig.csproj", "{4ECF2B9A-201B-43FF-A50B-DF28D1AEC3E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceOptionsConfig", "ServiceOptionsConfig\ServiceOptionsConfig.csproj", "{4ECF2B9A-201B-43FF-A50B-DF28D1AEC3E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingDemo", "LoggingDemo\LoggingDemo.csproj", "{4F824BF8-9CEF-4304-A1D2-2EF0F3569EB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingDemo", "LoggingDemo\LoggingDemo.csproj", "{4F824BF8-9CEF-4304-A1D2-2EF0F3569EB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingWebDemo", "LoggingWebDemo\LoggingWebDemo.csproj", "{1A43A438-DDDD-44D8-B9AD-270577E12DEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingWebDemo", "LoggingWebDemo\LoggingWebDemo.csproj", "{1A43A438-DDDD-44D8-B9AD-270577E12DEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingSeriLogDemo", "LoggingSeriLogDemo\LoggingSeriLogDemo.csproj", "{3F42D07D-735F-41B7-A47B-CCE64C1BD776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingSeriLogDemo", "LoggingSeriLogDemo\LoggingSeriLogDemo.csproj", "{3F42D07D-735F-41B7-A47B-CCE64C1BD776}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIddleWareDemo", "MIddleWareDemo\MIddleWareDemo.csproj", "{0C9BC755-3EE4-4B15-9E8C-4C8EA66528D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MIddleWareDemo", "MIddleWareDemo\MIddleWareDemo.csproj", "{0C9BC755-3EE4-4B15-9E8C-4C8EA66528D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFilesMiddleWare", "StaticFilesMiddleWare\StaticFilesMiddleWare.csproj", "{9D44E33A-5F03-4800-A3B2-17C282AD94D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{0C9BC755-3EE4-4B15-9E8C-4C8EA66528D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C9BC755-3EE4-4B15-9E8C-4C8EA66528D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C9BC755-3EE4-4B15-9E8C-4C8EA66528D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D44E33A-5F03-4800-A3B2-17C282AD94D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D44E33A-5F03-4800-A3B2-17C282AD94D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D44E33A-5F03-4800-A3B2-17C282AD94D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D44E33A-5F03-4800-A3B2-17C282AD94D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
