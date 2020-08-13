@@ -5,4 +5,7 @@
   </PropertyGroup>
 
 
+  <ItemGroup>
+    <Folder Include="file\" />
+  </ItemGroup>
 </Project>
