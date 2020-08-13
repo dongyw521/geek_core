@@ -26,6 +26,9 @@ namespace ServiceOptionsConfig
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.Configure<MvcOptions>(mvcOptions => { 
+            //    mvcOptions
+            //});
             //services.AddSingleton<OrderServiceOptions>();
             //每一个service可以有自己的options
             //services.Configure<OrderServiceOptions>(Configuration.GetSection("OrderService"));//从配置来实例化OrderServiceOptions,这样就保证了service和配置的解耦
