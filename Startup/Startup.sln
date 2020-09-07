@@ -17,11 +17,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingSeriLogDemo", "Loggi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MIddleWareDemo", "MIddleWareDemo\MIddleWareDemo.csproj", "{0C9BC755-3EE4-4B15-9E8C-4C8EA66528D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFilesMiddleWare", "StaticFilesMiddleWare\StaticFilesMiddleWare.csproj", "{9D44E33A-5F03-4800-A3B2-17C282AD94D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticFilesMiddleWare", "StaticFilesMiddleWare\StaticFilesMiddleWare.csproj", "{9D44E33A-5F03-4800-A3B2-17C282AD94D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileProviderDemo", "FileProviderDemo\FileProviderDemo.csproj", "{72D2FBBE-716D-49AA-A66B-DC13073E16E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileProviderDemo", "FileProviderDemo\FileProviderDemo.csproj", "{72D2FBBE-716D-49AA-A66B-DC13073E16E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingDemo", "RoutingDemo\RoutingDemo.csproj", "{F7104523-4FF7-4504-814A-FFA065C71A74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoutingDemo", "RoutingDemo\RoutingDemo.csproj", "{F7104523-4FF7-4504-814A-FFA065C71A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatRDemo", "MediatRDemo\MediatRDemo.csproj", "{4C98CCA1-91FD-46EC-B435-402FD5528F36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpClient", "HttpClient", "{F4FAFEA2-ABDC-4F48-A9BD-2ED0ADE2CBAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientDemo", "HttpClientDemo\HttpClientDemo.csproj", "{5D68B8D4-7D5F-4C45-9108-93118D20CE3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientServer", "HttpClientServer\HttpClientServer.csproj", "{06795A4C-0D86-45E4-A0ED-AD968BF04326}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,9 +77,25 @@ Global
 		{F7104523-4FF7-4504-814A-FFA065C71A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7104523-4FF7-4504-814A-FFA065C71A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7104523-4FF7-4504-814A-FFA065C71A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C98CCA1-91FD-46EC-B435-402FD5528F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C98CCA1-91FD-46EC-B435-402FD5528F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C98CCA1-91FD-46EC-B435-402FD5528F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C98CCA1-91FD-46EC-B435-402FD5528F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D68B8D4-7D5F-4C45-9108-93118D20CE3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D68B8D4-7D5F-4C45-9108-93118D20CE3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D68B8D4-7D5F-4C45-9108-93118D20CE3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D68B8D4-7D5F-4C45-9108-93118D20CE3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06795A4C-0D86-45E4-A0ED-AD968BF04326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06795A4C-0D86-45E4-A0ED-AD968BF04326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06795A4C-0D86-45E4-A0ED-AD968BF04326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06795A4C-0D86-45E4-A0ED-AD968BF04326}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D68B8D4-7D5F-4C45-9108-93118D20CE3D} = {F4FAFEA2-ABDC-4F48-A9BD-2ED0ADE2CBAA}
+		{06795A4C-0D86-45E4-A0ED-AD968BF04326} = {F4FAFEA2-ABDC-4F48-A9BD-2ED0ADE2CBAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2DE99D53-1894-456F-9563-60CC8B879741}

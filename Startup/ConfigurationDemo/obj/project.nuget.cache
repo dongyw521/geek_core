@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "e9Im4IoozdYh7jI37CMc5PQPx3L+wXaQ73HFLoc647CPNbjWSze1OOj+GFsi9OYoFBODlL++UhwEOpn6cQr/3Q==",
+  "dgSpecHash": "v5Sxq2LY6jLUjefCR6oC5gHYb1WEp41Dc19XvP9kR6eWjhRkHMYTxNGlLbCBn+Pa+3V9/ixePo234w63otUeMQ==",
   "success": true,
-  "projectFilePath": "/Users/dyw/geek/geek_core/Startup/ConfigurationDemo/ConfigurationDemo.csproj",
+  "projectFilePath": "C:\\study\\geek_core\\Startup\\ConfigurationDemo\\ConfigurationDemo.csproj",
   "expectedPackageFiles": [
-    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration/3.1.4/microsoft.extensions.configuration.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.4/microsoft.extensions.configuration.abstractions.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.binder/3.1.4/microsoft.extensions.configuration.binder.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.commandline/3.1.4/microsoft.extensions.configuration.commandline.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.environmentvariables/3.1.4/microsoft.extensions.configuration.environmentvariables.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.fileextensions/3.1.4/microsoft.extensions.configuration.fileextensions.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.ini/3.1.4/microsoft.extensions.configuration.ini.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.configuration.json/3.1.4/microsoft.extensions.configuration.json.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.4/microsoft.extensions.fileproviders.abstractions.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.fileproviders.physical/3.1.4/microsoft.extensions.fileproviders.physical.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.filesystemglobbing/3.1.4/microsoft.extensions.filesystemglobbing.3.1.4.nupkg.sha512",
-    "/Users/dyw/.nuget/packages/microsoft.extensions.primitives/3.1.4/microsoft.extensions.primitives.3.1.4.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.4\\microsoft.extensions.configuration.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.4\\microsoft.extensions.configuration.abstractions.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.4\\microsoft.extensions.configuration.binder.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.commandline\\3.1.4\\microsoft.extensions.configuration.commandline.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\3.1.4\\microsoft.extensions.configuration.environmentvariables.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\3.1.4\\microsoft.extensions.configuration.fileextensions.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.ini\\3.1.4\\microsoft.extensions.configuration.ini.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.json\\3.1.4\\microsoft.extensions.configuration.json.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.4\\microsoft.extensions.fileproviders.abstractions.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.4\\microsoft.extensions.fileproviders.physical.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.4\\microsoft.extensions.filesystemglobbing.3.1.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.4\\microsoft.extensions.primitives.3.1.4.nupkg.sha512"
   ],
   "logs": []
 }
