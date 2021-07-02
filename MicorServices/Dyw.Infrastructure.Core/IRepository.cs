@@ -9,6 +9,8 @@ namespace Dyw.Infrastructure.Core
 {
     public interface IRepository<TEntity> where TEntity : Entity, IAggregateRoot
     {
+        IUnitOfWork UnitOfWork { get; }
+
         TEntity Add(TEntity entity);
 
         Task<TEntity> AddAsync(TEntity entity, CancellationToken cancellationToken = default);
@@ -23,14 +25,14 @@ namespace Dyw.Infrastructure.Core
 
     }
 
-    public interface IRepository<TEntity, TKey> : IRepository<TEntity> where TEntity : Entity<TKey>, IAggregateRoot
+    public interface IRepository<TEntity, TPrimaryKey> : IRepository<TEntity> where TEntity : Entity<TPrimaryKey>, IAggregateRoot
     {
-        bool Delete(TKey Id);
+        bool Delete(TPrimaryKey Id);
 
-        Task<bool> DeleteAsync(TKey Id, CancellationToken cancellationToken = default);
+        Task<bool> DeleteAsync(TPrimaryKey Id, CancellationToken cancellationToken = default);
 
-        TEntity Get(TKey Id);
+        TEntity Get(TPrimaryKey Id);
 
-        Task<TEntity> GetAsync(TKey Id, CancellationToken cancellationToken = default);
+        Task<TEntity> GetAsync(TPrimaryKey Id, CancellationToken cancellationToken = default);
     }
 }

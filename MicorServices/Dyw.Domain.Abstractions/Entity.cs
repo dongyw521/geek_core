@@ -108,7 +108,7 @@ namespace Dyw.Domain.Abstractions
         }
 
         /// <summary>
-        /// 自定义对象运算符
+        /// 自定义对象运算符==
         /// </summary>
         /// <param name="left"></param>
         /// <param name="right"></param>
@@ -121,7 +121,7 @@ namespace Dyw.Domain.Abstractions
         }
 
         /// <summary>
-        /// 自定义对象运算符
+        /// 自定义对象运算符!=
         /// </summary>
         /// <param name="left"></param>
         /// <param name="right"></param>

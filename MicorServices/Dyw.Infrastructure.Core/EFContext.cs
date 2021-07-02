@@ -8,6 +8,7 @@ using MediatR;
 using Dyw.Domain.Abstractions;
 using System.Linq;
 using Microsoft.EntityFrameworkCore.Storage;
+using Dyw.Infrastructure.Core.Extensions;
 
 namespace Dyw.Infrastructure.Core
 {
@@ -89,13 +90,14 @@ namespace Dyw.Infrastructure.Core
         public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default)
         {
             await base.SaveChangesAsync(cancellationToken);
-            var domainEntities = this.ChangeTracker.Entries<Entity>().Where(e => e.Entity.DomainEvents != null && e.Entity.DomainEvents.Any());
-            var domainEvents = domainEntities.SelectMany(e => e.Entity.DomainEvents).ToList();
-            domainEntities.ToList().ForEach(e => e.Entity.ClearDomainEvent());
-            foreach (var _event in domainEvents)
-            {
-                await mediator.Publish(_event);//触发当前被操作实体上绑定的所有领域事件
-            }
+            await mediator.DispatchDomainEventsAsync(this);// 触发当前被操作实体上绑定的所有领域事件
+            //var domainEntities = this.ChangeTracker.Entries<Entity>().Where(e => e.Entity.DomainEvents != null && e.Entity.DomainEvents.Any());
+            //var domainEvents = domainEntities.SelectMany(e => e.Entity.DomainEvents).ToList();
+            //domainEntities.ToList().ForEach(e => e.Entity.ClearDomainEvent());
+            //foreach (var _event in domainEvents)
+            //{
+            //    await mediator.Publish(_event);//触发当前被操作实体上绑定的所有领域事件
+            //}
             return true;
         }
 
