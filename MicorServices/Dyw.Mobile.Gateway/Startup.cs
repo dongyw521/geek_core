@@ -36,7 +36,7 @@ namespace Dyw.Mobile.Gateway
 
 
 
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SecurityKey"]));
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SecurityKey"]));//∂‘≥∆º”√‹√ÿ‘ø
             services.AddSingleton(securityKey);
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
