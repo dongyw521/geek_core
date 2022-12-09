@@ -7,5 +7,6 @@
 
   <ItemGroup>
     <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
   </ItemGroup>
 </Project>

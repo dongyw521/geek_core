@@ -111,7 +111,7 @@ namespace GrpcClientDemo
                 onHalfOpen: () => { }
                 );
 
-            //熔断后还有继续的请求会抛出熔断异常，通过fallback策略处理后，返回友好结果
+            //熔断后还有继续的请求会抛出熔断异常，通过fallback策略处理后，返回友好结果，降级策略
             var fallbackMsg = new HttpResponseMessage()
             {
                 Content = new StringContent("{}")
